@@ -116,7 +116,7 @@ body {
 
 /* ===== SECTION 2 ===== */
 #section2 {
-  background: url("../img/bg2.jpg") center/cover no-repeat;
+  background: url("../img/latar4.png") center/cover no-repeat;
 }
 
 /* overlay biar teks kebaca */
@@ -180,7 +180,7 @@ body {
 
 /* ===== SECTION 3 ===== */
 #section3 {
-  background: url("../img/bg3.jpg") center/cover no-repeat;
+  background: url("../img/bg-kado.png") center/cover no-repeat;
 }
 
 #section3 .content {
@@ -407,7 +407,187 @@ body {
 }
 
 
+/* ===== SECTION 5 ===== */
+#section5 {
+  background: url("../img/kota.png") center/cover no-repeat;
+  overflow: hidden;
+}
 
+/* overlay biar city keliatan malam & elegan */
+.overlay-dark {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.85),
+    rgba(0,0,0,0.4)
+  );
+  z-index: 1;
+}
+
+
+
+/* fireworks canvas */
+#fireworks {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+/* teks utama */
+.celebration {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  color: white;
+  animation: fadeUpBig 2s ease forwards;
+}
+
+.celebration h1 {
+  font-size: clamp(28px, 5vw, 52px);
+  letter-spacing: 4px;
+  text-shadow: 0 0 20px rgba(255,255,255,0.6);
+}
+
+.celebration h2 {
+  margin-top: 12px;
+  font-size: clamp(24px, 4vw, 42px);
+  color: #ff4d6d;
+  text-shadow: 0 0 25px rgba(255,77,109,0.9);
+}
+
+/* animasi masuk */
+@keyframes fadeUpBig {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= BUTTON KENANGAN ================= */
+.btn-kenangan {
+  margin-top: 40px;
+  padding: 14px 36px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #ff4d6d, #ff9a9e);
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1.2s ease forwards;
+  animation-delay: 1.5s;
+  box-shadow: 0 15px 40px rgba(255, 77, 109, 0.4);
+}
+
+.btn-kenangan:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 50px rgba(255, 77, 109, 0.6);
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* section 6 */
+#section6 {
+  background: #0b0b12;
+  overflow: hidden;
+}
+
+/* GRID */
+.memory-grid {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.overlay-dark {
+  z-index: 1;
+}
+
+.memory-photo {
+  position: absolute;
+  width: clamp(150px, 18vw, 200px);
+  height: auto;
+  border-radius: 16px;
+
+  opacity: 0;
+  transform: scale(0.95);
+  filter: brightness(1.15) contrast(1.1);
+
+  transition:
+    opacity 3s ease,
+    transform 3s ease,
+    filter 3s ease;
+
+  box-shadow: 0 20px 45px rgba(0,0,0,0.25);
+}
+
+.memory-photo.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+
+/* LOVE FLOAT */
+.love-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.love {
+  position: absolute;
+  bottom: -40px;
+  font-size: 20px;
+  animation: floatLove linear forwards;
+  opacity: 0.8;
+}
+
+@keyframes floatLove {
+  from {
+    transform: translateY(0) scale(1);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-110vh) scale(1.5);
+    opacity: 0;
+  }
+}
+
+/* COPYRIGHT */
+.copyright {
+  position: fixed;
+  bottom: 14px;
+  right: 16px;
+  font-size: 12px;
+  color: rgba(255,255,255,0.6);
+  z-index: 9999;
+  letter-spacing: 0.5px;
+  user-select: none;
+}
+
+.copyright strong {
+  color: #ff6b81;
+  font-weight: 500;
+}
 
 /* DI HANDPHONE */
 @media (max-width: 480px) {
