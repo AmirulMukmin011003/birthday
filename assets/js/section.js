@@ -48,12 +48,12 @@ goNext.addEventListener("click", () => {
 function startSection4() {
   startTyping(
     line1,
-    "Sebelum itu, selamat ulang tahun Nur 🎉 semoga makin dewasa di umur yang sudah dewasa ini. Walaupun kadang masih suka bikin emosi sedikit 🤭",
+    "Sebelum itu, selamat ulang tahun Nur🎉 semoga makin dewasa di umur yang sudah dewasa ini. Walaupun kadang masih suka bikin emosi sedikit 🤭",
     80,
     () => {
       startTyping(
         line2,
-        "Maaf cuma bisa kasih yang seperti ini. Memang agak beda dari kebanyakan orang lain😅, nanti bakal kesampaianji Toraja itu. Hahah",
+        "Maaf cuma bisa kasih yang seperti ini. Walau agak beda dari kebanyakan orang😅, tapi nanti bakal kesampaianji Toraja itu. Hahah",
         80,
         () => {
           startTyping(

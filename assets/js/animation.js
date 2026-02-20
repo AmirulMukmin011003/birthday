@@ -1,6 +1,6 @@
 /* ================== KADO PINDAH RANDOM ================== */
 let clickCount = 0;
-const maxMoves = 15;
+const maxMoves = 20;
 
 if (movingGift) {
   movingGift.addEventListener("click", () => {
