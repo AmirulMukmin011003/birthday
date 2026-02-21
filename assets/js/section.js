@@ -58,7 +58,7 @@ function startSection4() {
         () => {
           startTyping(
             line3,
-            "Tapi semoga semua yang kimau pelan-pelan bisa tercapai. Sehat terus, dan selalu bahagia🤍",
+            "Dan semoga semua yang kimau pelan-pelan bisa tercapai. Sehat terus, dan selalu bahagia🤍",
             80,
             () => {
               setTimeout(() => {
